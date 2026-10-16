@@ -1,0 +1,6 @@
+{
+  "name": "Estêvão Willian - Site Officiel & Hommage",
+  "description": "Portail complet dédié au prodige brésilien Estêvão Willian (Messinho) : galerie photos haute résolution, statistiques détaillées de tous ses matchs, et biographie intégrale.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
