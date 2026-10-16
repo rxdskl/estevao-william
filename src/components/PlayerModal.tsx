@@ -57,36 +57,38 @@ export const PlayerModal: React.FC<PlayerModalProps> = ({ isOpen, onClose }) => 
         {/* Modal Body */}
         <div className="p-6 space-y-6 max-h-[75vh] overflow-y-auto">
           
-          {/* Identity Grid */}
-          <div className="space-y-3">
-            <div className="text-xs font-bold text-emerald-400 uppercase tracking-wider font-mono flex items-center gap-1.5">
-              <FileText className="w-3.5 h-3.5" />
-              <span>Identité & Profil Physique</span>
+          {/* Identity Header & Photo */}
+          <div className="flex flex-col sm:flex-row gap-5 items-center sm:items-start bg-slate-900/60 p-4 rounded-xl border border-slate-800">
+            <div className="w-24 h-32 sm:w-28 sm:h-36 rounded-xl overflow-hidden border border-slate-700 shrink-0 bg-slate-950 shadow-md">
+              <img
+                src={PLAYER_INFO.heroImages.portrait}
+                alt={PLAYER_INFO.fullName}
+                referrerPolicy="no-referrer"
+                className="w-full h-full object-cover"
+              />
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs">
-              <div className="bg-slate-900/60 p-3 rounded-xl border border-slate-800">
-                <div className="text-slate-500 text-[11px]">Nom complet</div>
-                <div className="text-white font-medium mt-0.5">{PLAYER_INFO.fullName}</div>
+            <div className="flex-1 space-y-3 w-full">
+              <div className="text-xs font-bold text-emerald-400 uppercase tracking-wider font-mono flex items-center gap-1.5">
+                <FileText className="w-3.5 h-3.5" />
+                <span>Identité & Profil Physique</span>
               </div>
-              <div className="bg-slate-900/60 p-3 rounded-xl border border-slate-800">
-                <div className="text-slate-500 text-[11px]">Date de naissance</div>
-                <div className="text-white font-medium mt-0.5">{PLAYER_INFO.birthDate} ({PLAYER_INFO.age} ans)</div>
-              </div>
-              <div className="bg-slate-900/60 p-3 rounded-xl border border-slate-800">
-                <div className="text-slate-500 text-[11px]">Lieu de naissance</div>
-                <div className="text-white font-medium mt-0.5">{PLAYER_INFO.birthPlace}</div>
-              </div>
-              <div className="bg-slate-900/60 p-3 rounded-xl border border-slate-800">
-                <div className="text-slate-500 text-[11px]">Taille & Poids</div>
-                <div className="text-white font-medium mt-0.5">{PLAYER_INFO.height} · {PLAYER_INFO.weight}</div>
-              </div>
-              <div className="bg-slate-900/60 p-3 rounded-xl border border-slate-800">
-                <div className="text-slate-500 text-[11px]">Pied de prédilection</div>
-                <div className="text-emerald-400 font-bold mt-0.5">{PLAYER_INFO.preferredFoot}</div>
-              </div>
-              <div className="bg-slate-900/60 p-3 rounded-xl border border-slate-800">
-                <div className="text-slate-500 text-[11px]">Poste préférentiel</div>
-                <div className="text-white font-medium mt-0.5">{PLAYER_INFO.primaryPosition}</div>
+              <div className="grid grid-cols-2 gap-2 text-xs">
+                <div className="bg-slate-950/60 p-2.5 rounded-lg border border-slate-800/80">
+                  <div className="text-slate-500 text-[10px]">Nom complet</div>
+                  <div className="text-white font-medium text-xs mt-0.5">{PLAYER_INFO.fullName}</div>
+                </div>
+                <div className="bg-slate-950/60 p-2.5 rounded-lg border border-slate-800/80">
+                  <div className="text-slate-500 text-[10px]">Naissance & Âge</div>
+                  <div className="text-white font-medium text-xs mt-0.5">{PLAYER_INFO.birthDate} ({PLAYER_INFO.age} ans)</div>
+                </div>
+                <div className="bg-slate-950/60 p-2.5 rounded-lg border border-slate-800/80">
+                  <div className="text-slate-500 text-[10px]">Taille & Poids</div>
+                  <div className="text-white font-medium text-xs mt-0.5">{PLAYER_INFO.height} · {PLAYER_INFO.weight}</div>
+                </div>
+                <div className="bg-slate-950/60 p-2.5 rounded-lg border border-slate-800/80">
+                  <div className="text-slate-500 text-[10px]">Pied fort & Poste</div>
+                  <div className="text-emerald-400 font-semibold text-xs mt-0.5">{PLAYER_INFO.preferredFoot} · {PLAYER_INFO.primaryPosition}</div>
+                </div>
               </div>
             </div>
           </div>

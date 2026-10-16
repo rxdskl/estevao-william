@@ -1,5 +1,11 @@
 import { BioChapter, MatchStat, SeasonStats, GalleryItem, ComparisonPlayer, TacticalSkill, SignatureMove, QuizQuestion } from '../types';
 
+import heroWideImg from '../assets/images/hero_estevao_wide_1792165882507.jpg';
+import portraitHdImg from '../assets/images/estevao_portrait_hd_1792165882690.jpg';
+import celebrationImg from '../assets/images/gallery_estevao_celebration_1791795349794.jpg';
+import selecaoImg from '../assets/images/gallery_estevao_selecao_1791795362187.jpg';
+import dribbleImg from '../assets/images/gallery_estevao_dribble_1791795373778.jpg';
+
 export const PLAYER_INFO = {
   fullName: "Estêvão Willian Almeida de Oliveira Gonçalves",
   commonName: "Estêvão Willian",
@@ -22,11 +28,11 @@ export const PLAYER_INFO = {
   proDebut: "6 décembre 2023 (16 ans et 226 jours)",
   selecaoDebut: "6 septembre 2024 (17 ans et 135 jours)",
   heroImages: {
-    action: "/src/assets/images/hero_estevao_action_1791795338115.jpg",
-    portrait: "/src/assets/images/gallery_estevao_portrait_1791795384073.jpg",
-    celebration: "/src/assets/images/gallery_estevao_celebration_1791795349794.jpg",
-    selecao: "/src/assets/images/gallery_estevao_selecao_1791795362187.jpg",
-    dribble: "/src/assets/images/gallery_estevao_dribble_1791795373778.jpg",
+    action: heroWideImg,
+    portrait: portraitHdImg,
+    celebration: celebrationImg,
+    selecao: selecaoImg,
+    dribble: dribbleImg,
   }
 };
 
@@ -513,7 +519,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-1",
     title: "Le Dribble Électrique sous les Projecteurs",
     category: "action",
-    imageSrc: "/src/assets/images/hero_estevao_action_1791795338115.jpg",
+    imageSrc: heroWideImg,
     date: "Novembre 2024",
     location: "Allianz Parque, São Paulo",
     context: "Accélération tranchante d'Estêvão éliminant le latéral adverse lors du choc de Serie A. Le ballon colle à son pied gauche.",
@@ -524,7 +530,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-2",
     title: "La Joie Pure : Hommage au Ciel",
     category: "celebration",
-    imageSrc: "/src/assets/images/gallery_estevao_celebration_1791795349794.jpg",
+    imageSrc: celebrationImg,
     date: "Octobre 2024",
     location: "São Paulo, Brésil",
     context: "Célébration emblématique les deux mains tendues vers le ciel après son but historique battant le record de Neymar.",
@@ -535,7 +541,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-3",
     title: "Le Prodige sous le Maillot Auriverde",
     category: "selecao",
-    imageSrc: "/src/assets/images/gallery_estevao_selecao_1791795362187.jpg",
+    imageSrc: selecaoImg,
     date: "Septembre 2024",
     location: "Estádio Couto Pereira, Curitiba",
     context: "En plein rush avec l'équipe nationale senior du Brésil lors des éliminatoires de la Coupe du Monde FIFA 2026.",
@@ -546,7 +552,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-4",
     title: "L'Art du Crochet : Agilité et Centre de Gravité",
     category: "action",
-    imageSrc: "/src/assets/images/gallery_estevao_dribble_1791795373778.jpg",
+    imageSrc: dribbleImg,
     date: "Août 2024",
     location: "Brésil",
     context: "Prise d'appui basse et changement de direction dévastateur. Une signature gestuelle qui désarçonne les défenses.",
@@ -557,7 +563,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "gal-5",
     title: "Le Regard Tourné Vers les Sommets",
     category: "portrait",
-    imageSrc: "/src/assets/images/gallery_estevao_portrait_1791795384073.jpg",
+    imageSrc: portraitHdImg,
     date: "Saison 2024/2025",
     location: "São Paulo",
     context: "Portrait officiel du phénomène de 17 ans, sourire radieux et détermination sans faille avant son envol pour Stamford Bridge.",
